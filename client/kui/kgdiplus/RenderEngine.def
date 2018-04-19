@@ -1,0 +1,7 @@
+; RenderEngine.def : Declares the module parameters for the DLL.
+
+LIBRARY      "RenderEngine_Software"
+
+EXPORTS
+    ; Explicit exports can go here
+    getInstance	@1

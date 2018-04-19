@@ -1,0 +1,172 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2017,1,15,5348
+ PRODUCTVERSION 2017,1,15,5348
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileVersion", "2017.1.15.5348"
+            VALUE "ProductVersion", "2017.1.15.5348"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_KCORE_CLASS_WL_NAME "网络游戏"
+    IDS_KCORE_CLASS_DJ_NAME "精品单机"
+    IDS_KCORE_CLASS_QP_NAME "棋牌游戏"
+    IDS_KCORE_CLASS_DZ_NAME "对战平台"
+    IDS_KCORE_CLASS_LT_NAME "聊天交友"
+    IDS_KCORE_CLASS_WY_NAME "网页游戏"
+    IDS_KCORE_CLASS_XX_NAME "休闲益智"
+    IDS_KCORE_CLASS_PL_NAME "游戏辅助"
+    IDS_KCORE_CLASS_CY_NAME "常用软件"
+    IDS_KCORE_CLASS_YY_NAME "影音工具"
+    IDS_KCORE_CLASS_GP_NAME "股票证券"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_KCORE_CLASS_GQ_NAME "高清影视"
+    IDS_KCORE_CLASS_ZX_NAME "在线音乐"
+    IDS_KCORE_CLASS_XC_NAME "秀场直播"
+    IDS_KCORE_CLASS_SJ_NAME "手机游戏"
+    IDS_KCORE_CLASS_BG_NAME "办公软件"
+    IDS_KCORE_ALL_AREA_NAME "所有区域"
+    IDS_KCORE_DEF_AREA_NAME "默认分区"
+    IDS_KCORE_CLASS_DPNP_NAME "显卡驱动"
+    IDS_KCORE_CLASS_NB_NAME   "网吧游戏"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_KCORE_CLASS_WL_NAME "Online"
+    IDS_KCORE_CLASS_DJ_NAME "Single Player"
+    IDS_KCORE_CLASS_QP_NAME "Chess & Cards"
+    IDS_KCORE_CLASS_DZ_NAME "PvP"
+    IDS_KCORE_CLASS_LT_NAME "IM"
+    IDS_KCORE_CLASS_WY_NAME "Web"
+    IDS_KCORE_CLASS_XX_NAME "Casual"
+    IDS_KCORE_CLASS_PL_NAME "Help"
+    IDS_KCORE_CLASS_CY_NAME "Common"
+    IDS_KCORE_CLASS_YY_NAME "Multimedia"
+    IDS_KCORE_CLASS_GP_NAME "Finance"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_KCORE_CLASS_GQ_NAME "Video"
+    IDS_KCORE_CLASS_ZX_NAME "Music"
+    IDS_KCORE_CLASS_XC_NAME "Streams"
+    IDS_KCORE_CLASS_SJ_NAME "Mobile"
+    IDS_KCORE_CLASS_BG_NAME "Office"
+    IDS_KCORE_ALL_AREA_NAME "All Area"
+    IDS_KCORE_DEF_AREA_NAME "Default Area"
+    IDS_KCORE_CLASS_DPNP_NAME "Display Driver"
+    IDS_KCORE_CLASS_NB_NAME "NetBar Game"
+END
+
+#endif    // 英语 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

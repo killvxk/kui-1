@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="aes">
+      <UniqueIdentifier>{c2194e1e-985b-4c0d-a234-940199b0df8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{59899fa0-f1e5-4628-9b51-8146a39999f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{378a1a82-c9f8-4835-8a5a-4a4048768f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="winhttp">
+      <UniqueIdentifier>{cecb2fce-ebdb-4832-bc05-5c8e9be53580}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IdcMenuXml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UploadGameClick.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dbmgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyChiToLetter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\AES.h">
+      <Filter>aes</Filter>
+    </ClInclude>
+    <ClInclude Include="UIX.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\json\src\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\xml\tinystr.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\xml\tinyxml.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\common.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\connection.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\handle.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\option.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\query_header.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\request.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\session.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\url.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\winhttp\win_http.hpp">
+      <Filter>winhttp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IdcMenuXml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UploadGameClick.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dbmgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyChiToLetter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\AES.cpp">
+      <Filter>aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\json\src\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\json\src\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\json\src\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\xml\tinystr.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\xml\tinyxml.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\xml\tinyxmlerror.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\xml\tinyxmlparser.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\winhttp\common.cpp">
+      <Filter>winhttp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\winhttp\connection.cpp">
+      <Filter>winhttp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\winhttp\handle.cpp">
+      <Filter>winhttp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\winhttp\request.cpp">
+      <Filter>winhttp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\winhttp\session.cpp">
+      <Filter>winhttp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\winhttp\url.cpp">
+      <Filter>winhttp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\winhttp\win_http.cpp">
+      <Filter>winhttp</Filter>
+    </ClCompile>
+    <ClCompile Include="UIX.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\public\src\json\src\json_internalarray.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\..\public\src\json\src\json_internalmap.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\..\public\src\json\src\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

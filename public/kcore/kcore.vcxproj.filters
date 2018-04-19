@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="channel">
+      <UniqueIdentifier>{543de7b8-8197-4b62-80b7-e3810fd6d60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="winhttp">
+      <UniqueIdentifier>{6310ecc5-bd53-4eeb-9f67-7ebdfb60efdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="winhttp\impl">
+      <UniqueIdentifier>{5dd0b576-32bc-48cc-bf07-439b70f22f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="klog">
+      <UniqueIdentifier>{4a8fb52b-089b-4ae7-8112-9fb2a06241ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="klog\server">
+      <UniqueIdentifier>{af29ce72-e461-4bda-af54-c23c8ee03584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="klog\client">
+      <UniqueIdentifier>{e1e1eada-aba2-48bb-bb06-cb902d8c0346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loadconfig">
+      <UniqueIdentifier>{c6c4e01b-8176-43f6-bc1c-101525702119}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DesCrypt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kencode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kfirewall.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="khardware.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kicon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="klogger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kmdb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kmount.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="knet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kservice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kunzip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kzip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CchannelMgr.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="channelclt.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="channelsvr.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winhttp\common.cpp">
+      <Filter>winhttp\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winhttp\connection.cpp">
+      <Filter>winhttp\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winhttp\handle.cpp">
+      <Filter>winhttp\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winhttp\request.cpp">
+      <Filter>winhttp\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winhttp\session.cpp">
+      <Filter>winhttp\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winhttp\url.cpp">
+      <Filter>winhttp\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winhttp\win_http.cpp">
+      <Filter>winhttp\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Console_Write.cpp">
+      <Filter>klog\server</Filter>
+    </ClCompile>
+    <ClCompile Include="File_Write.cpp">
+      <Filter>klog\server</Filter>
+    </ClCompile>
+    <ClCompile Include="klog_server.cpp">
+      <Filter>klog\server</Filter>
+    </ClCompile>
+    <ClCompile Include="klog_client.cpp">
+      <Filter>klog\client</Filter>
+    </ClCompile>
+    <ClCompile Include="klog.cpp">
+      <Filter>klog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\localconfig\localconfigfun.cpp">
+      <Filter>loadconfig</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kcore.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="..\..\include\kcore.inl">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kcore.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CchannelMgr.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="channelclt.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="channelsvr.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kcore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kfirewall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kmount.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\common.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\connection.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\handle.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\option.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\query_header.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\request.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\session.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\url.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\winhttp\win_http.hpp">
+      <Filter>winhttp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="public.h">
+      <Filter>klog</Filter>
+    </ClInclude>
+    <ClInclude Include="Console_Write.h">
+      <Filter>klog\server</Filter>
+    </ClInclude>
+    <ClInclude Include="File_Write.h">
+      <Filter>klog\server</Filter>
+    </ClInclude>
+    <ClInclude Include="klog_server.h">
+      <Filter>klog\server</Filter>
+    </ClInclude>
+    <ClInclude Include="klog_client.h">
+      <Filter>klog\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\klog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\localconfig\localconfigfun.h">
+      <Filter>loadconfig</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

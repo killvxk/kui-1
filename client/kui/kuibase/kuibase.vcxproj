@@ -1,0 +1,1012 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2CAAB5DF-2591-469F-B2DA-55DB5850C3C9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>kuibase</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\bin\x86\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\bin\x86\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;KUIBASE_EXPORTS;OS_WIN;OPENHMI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\include\kuibase\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile>OpenHMI.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\lib\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\..\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;KUIBASE_EXPORTS;OS_WIN;OPENHMI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\include\kuibase\;.\;..\..\..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\lib\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\..\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\CONFIG.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseApplication.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseFuncWidget.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseLogic.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseMainFrame.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseMessage.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseOperationCenter.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBasePopup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseScreen.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CMain.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CLanguage.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CLog.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Application.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Language.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Logic.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Service.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Skin.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\INIT.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CBaseData.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CBaseService.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CMsgFromServiceThread.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CMsgToServiceThread.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CServiceAdaptor.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\IBaseService.h" />
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\IServiceAdaptor.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Array.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Array2.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\ArrayPtr.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\ByteArray.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\CacheObject.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\CachePool.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\CachePool2.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\List.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\List2.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\MacroDefine.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Map.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Map2.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Math.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Metatype.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Object.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\ObjectPtr.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Pair.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\Set.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\String.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\StructDefine.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Common\TypeDefine.h" />
+    <ClInclude Include="..\..\..\include\kuibase\OpenHMI.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\CTime.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\File\CFile.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\File\CFolder.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\File\CPath.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\MemManager\CMemManager.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Net\CAutoSocket.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Net\ISocketListener.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CCursor.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgEdit.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgHardKey.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgScreen.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgScreenTouch.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CScreenTouchServer.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\IScreenTouchListener.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CAutoSync.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CSyncObject.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CThread.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CWaitObject.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\CMsgTimer.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\CTimer.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\CTimerManager.h" />
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\ITimerListener.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderCacheData.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderEngine.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderFilter.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderFont.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderGroup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderImage.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderItem.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderText.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderViewport.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\IRenderEngine.h" />
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\IRenderSession.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CConfigParser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CFontParser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CLanguageParser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CNodeParser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CPluginParser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CPropertySet.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResCtrlWidget.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFilter.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFilterSet.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFont.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFontGroup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFuncWidget.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResGroup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResHitArea.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResImage.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResImageField.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResItem.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResNode.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResPopup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResScreen.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResTextField.h" />
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CSkinParser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CComponent.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CContainer.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CEventGesture.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CModel.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\CWgtMessageBox.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CKeyTable.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CKeyTable_ASC.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CWgtKeyboard.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CWgtKeyboard_ASC.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Balance\CCtrlBalance.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Balance\CModelBalance.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Balance\CViewBalance.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Button\CCtrlButton.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Edit\CCtrlEdit.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\ImageField\CCtrlImageField.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Label\CCtrlLabel.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Label\CViewLabel.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CBaseListAmt.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CCtrlList.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CCtrlList_Simple.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtElasticity.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtEnterInterdigitation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtFling.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtTouchShake.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CModelList.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\IViewList.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\IViewList_Simple.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Progressbar\CCtrlProgressbar.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Progressbar\CModelProgressbar.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Progressbar\CViewProgressbar.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Scrollbar\CCtrlScrollbar.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Scrollbar\CModelScrollbar.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Scrollbar\CViewScrollbar.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Selector\CCtrlSelector.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CBaseTableAmt.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CCtrlTable.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CModelTable.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtElasticity.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtEnterInterdigitation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtFling.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtTouchShake.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\IViewTable.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\TextField\CCtrlTextField.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Tree\CCtrlTree.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Tree\CModelTree.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Tree\IViewTree.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Viewport\CCtrlViewport.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\WebBrowser\CCtrlWebBrowser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\WebBrowser\jscallclient.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\WebBrowser\WebBrowser.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CView.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CBaseHitArea.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CHitAreaCircle.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CHitAreaRectangle.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CHitAreaTriangle.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\IMovieClipGenerator.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\ISoundGenerator.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CButtonGroup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CMovieClip.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CPoint.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CRectangle.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CRectangleF.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CSize.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DBox.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DColor.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DMatrix.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DPlane.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DPoint.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DQuaternion.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DRay.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DVector.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DVector4.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CBaseMotionAnimation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CKeyFrame.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CKeyFrameAnimation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CTrackAnimation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CUniformRectilinearMotionAnimation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CValueAnimation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CAdapterAnimationListener.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CAnimationGroup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CAnimationPlayer.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CBaseAnimation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtBoolean.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtByte.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtChar.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtColor.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtDouble.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtFloat.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtInt.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtLong.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtPoint.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtRectangle.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtShort.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtString.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtVector2.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CBaseAmtData.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\IAnimationListener.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CBaseInterpolation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CBezierInterpolation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CDiscreteInterpolation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CLinearInterpolation.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CArc.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CBasePath.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CBezier.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CCircle.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CEclipse.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CPathGroup.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CPoliLine.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\CCommandDispatcher.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\CEventDispatcher.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ENV.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CBaseGestureData.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CBaseGestureRecognizer.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CGestureManager.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CMsgGesture.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\IGestureRecognizer.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ICommandListener.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\IEventListener.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\Render\CMsgRender.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\Render\IRenderable.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ScreenTouch\CScreenTouchManager.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ScreenTouch\ICanvas.h" />
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ScreenTouch\ICursorTracker.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseProject\CONFIG.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseApplication.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseFuncWidget.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseLogic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseMainFrame.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseMessage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseOperationCenter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBasePopup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseScreen.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CMain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CLanguage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CLog.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Application.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Language.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Logic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Service.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Skin.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\INIT.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CBaseData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CBaseService.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CMsgFromServiceThread.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CMsgToServiceThread.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CServiceAdaptor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Common\ByteArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Common\CacheObject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Common\Math.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Common\Object.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Common\String.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="kunzip.cpp" />
+    <ClCompile Include="OpenHMI.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\CTime.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\File\CFile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\File\CFolder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\File\CPath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Net\CAutoSocket.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CCursor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CMsgHardKey.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CMsgScreen.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CMsgScreenTouch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CScreenTouchServer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CAutoSync.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CSyncObject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CThread.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CWaitObject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Timer\CMsgTimer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Timer\CTimer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Platform\Timer\CTimerManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderCacheData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderEngine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderFilter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderFont.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderGroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderImage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderItem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderText.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderViewport.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CConfigParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CFontParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CLanguageParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CNodeParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CPluginParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CPropertySet.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResCtrlWidget.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFilter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFilterSet.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFont.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFontGroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFuncWidget.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResGroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResHitArea.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResImage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResImageField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResItem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResNode.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResPopup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResScreen.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResTextField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CSkinParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\ZipSkin.cpp" />
+    <ClCompile Include="UISystem\2DSystem\CComponent.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\CContainer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\CModel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\CWgtMessageBox.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CKeyTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CKeyTable_ASC.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CWgtKeyboard.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CWgtKeyboard_ASC.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Balance\CCtrlBalance.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Balance\CModelBalance.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Balance\CViewBalance.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Button\CCtrlButton.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Edit\CCtrlEdit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\ImageField\CCtrlImageField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Label\CCtrlLabel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Label\CViewLabel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CBaseListAmt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CCtrlList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CCtrlList_Simple.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtElasticity.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtEnterInterdigitation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtFling.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtTouchShake.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CModelList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Progressbar\CCtrlProgressbar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Progressbar\CModelProgressbar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Progressbar\CViewProgressbar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Scrollbar\CCtrlScrollbar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Scrollbar\CModelScrollbar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Scrollbar\CViewScrollbar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Selector\CCtrlSelector.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CBaseTableAmt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CCtrlTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CModelTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtElasticity.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtEnterInterdigitation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtFling.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtTouchShake.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\TextField\CCtrlTextField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Tree\CCtrlTree.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Tree\CModelTree.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Viewport\CCtrlViewport.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\WebBrowser\CCtrlWebBrowser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\WebBrowser\jscallclient.cpp" />
+    <ClCompile Include="UISystem\2DSystem\Control\WebBrowser\WebBrowser.cpp" />
+    <ClCompile Include="UISystem\2DSystem\CView.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CBaseHitArea.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CHitAreaCircle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CHitAreaRectangle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CHitAreaTriangle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CButtonGroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CMovieClip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CPoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CRectangle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CRectangleF.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CSize.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DBox.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DColor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DMatrix.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DPlane.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DPoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DQuaternion.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DRay.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DVector.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DVector4.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CBaseMotionAnimation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CKeyFrame.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CKeyFrameAnimation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CTrackAnimation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CUniformRectilinearMotionAnimation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CValueAnimation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CAdapterAnimationListener.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CAnimationGroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CAnimationPlayer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CBaseAnimation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtBoolean.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtByte.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtChar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtColor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtDouble.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtFloat.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtInt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtLong.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtPoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtRectangle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtShort.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtString.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtVector2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CBaseAmtData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CBaseInterpolation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CBezierInterpolation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CDiscreteInterpolation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CLinearInterpolation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CArc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CBasePath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CBezier.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CCircle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CEclipse.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CPathGroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CPoliLine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\CCommandDispatcher.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\CEventDispatcher.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\ENV.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\GestureRecognizer\CBaseGestureRecognizer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\GestureRecognizer\CGestureManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\GestureRecognizer\CMsgGesture.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\Render\CMsgRender.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UISystem\ScreenTouch\CScreenTouchManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kuibase.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="DataPool">
+      <UniqueIdentifier>{14a460a3-fd17-412a-b4ad-b96beae817a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Font">
+      <UniqueIdentifier>{c4d8b325-d7c1-47a6-b9fc-493845f88a3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Image">
+      <UniqueIdentifier>{935e283e-1b9b-4390-bef9-b99822a44344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenHMIConnector">
+      <UniqueIdentifier>{652ff84e-0b0c-4e1d-ade1-b8aaa0d3c1a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{779c1067-1794-45ab-a5de-f0cd5e443ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderPipeline">
+      <UniqueIdentifier>{1342f372-8d4b-470f-a17c-c76a5f21ed90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderPipeline\Filter">
+      <UniqueIdentifier>{1c38faf2-5d84-4676-a8aa-0ee25e381f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{8f1f43f0-b9e4-4970-bfac-43dbd1574e79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataPool\Font\CCacheGlyph.cpp">
+      <Filter>DataPool\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Font\CFontFace.cpp">
+      <Filter>DataPool\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Image\CCacheImage.cpp">
+      <Filter>DataPool\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Image\CImageParser.cpp">
+      <Filter>DataPool\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Image\CImgBMP.cpp">
+      <Filter>DataPool\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Image\CImgPNG.cpp">
+      <Filter>DataPool\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CImagePool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CFontPool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenHMIConnector\CImpRenderEngine.cpp">
+      <Filter>OpenHMIConnector</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenHMIConnector\CImpRenderSession.cpp">
+      <Filter>OpenHMIConnector</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\CRenderEngineOS.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFilterCenter.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFltMask.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFltReflection.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CTextLayout.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CCacheData.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CRenderEntry.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\CBilinearFunc.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\CDIB.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataPool\Font\CCacheGlyph.h">
+      <Filter>DataPool\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Font\CFontFace.h">
+      <Filter>DataPool\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Image\CCacheImage.h">
+      <Filter>DataPool\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Image\CImageParser.h">
+      <Filter>DataPool\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Image\CImgBMP.h">
+      <Filter>DataPool\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Image\CImgPNG.h">
+      <Filter>DataPool\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CImagePool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CFontPool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenHMIConnector\CImpRenderEngine.h">
+      <Filter>OpenHMIConnector</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenHMIConnector\CImpRenderSession.h">
+      <Filter>OpenHMIConnector</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\CRenderEngineOS.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFilterCenter.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFltMask.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFltReflection.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CTextLayout.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CCacheData.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CRenderEntry.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\CBilinearFunc.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\CDIB.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="ThirdInclude.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RenderEngine.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kgdiplus.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

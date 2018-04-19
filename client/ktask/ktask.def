@@ -1,0 +1,4 @@
+;LIBRARY	"ktask"
+EXPORTS
+	AfxGetServiceInfo			@1
+	AfxSeviceProc				@2

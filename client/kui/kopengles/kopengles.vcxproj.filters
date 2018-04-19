@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="OpenHMIConnector">
+      <UniqueIdentifier>{bc52b275-15cc-46c2-b01a-0193f4fe5cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{4b82a539-b804-49e1-a83d-f83489e92f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{aa3c1981-dbad-4271-a949-0c8c1251f5da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool">
+      <UniqueIdentifier>{1d09bd3f-f312-4d8e-8586-0e9defd3ec5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Font">
+      <UniqueIdentifier>{68001528-bc35-458a-b2ae-dee97ef203c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Image">
+      <UniqueIdentifier>{09cf0841-5a52-4ea9-8a1c-f90e210a412e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Material">
+      <UniqueIdentifier>{2a452404-0384-4fb6-bd2d-084fbca90de3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Mesh">
+      <UniqueIdentifier>{7277b7f9-925a-438b-ba2a-06035c2350ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Program">
+      <UniqueIdentifier>{c5997118-8dd0-44e4-9bde-5cab8c8ad003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Shader">
+      <UniqueIdentifier>{2b7ef7b5-f974-4a12-ba74-2cde5167fa87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataPool\Texture">
+      <UniqueIdentifier>{442ad0b1-5c2a-4560-a077-6b643278a203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderPipeline">
+      <UniqueIdentifier>{bb843983-daad-4c3b-abf0-8662eb4a32a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderPipeline\CacheData">
+      <UniqueIdentifier>{dd3b8eff-4319-4297-bf54-4bb8cabff193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderPipeline\Filter">
+      <UniqueIdentifier>{2a0f8b3b-61b4-462d-aa28-15f272e963ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderPipeline\RenderTarget">
+      <UniqueIdentifier>{8034387f-01cb-46ed-8464-f73eb712abe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderPipeline\Text">
+      <UniqueIdentifier>{1688c774-a85a-41de-acde-133d72ed46b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RenderEngine.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenHMIConnector\CImpRenderEngine.cpp">
+      <Filter>OpenHMIConnector</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenHMIConnector\CImpRenderSession.cpp">
+      <Filter>OpenHMIConnector</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\CRenderEngineOS.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\CBilinearFunc.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\CCamera.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\CDIB.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine.cpp" />
+    <ClCompile Include="DataPool\Font\CCacheGlyph.cpp">
+      <Filter>DataPool\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Font\CFontFace.cpp">
+      <Filter>DataPool\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Image\CCacheImage.cpp">
+      <Filter>DataPool\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Image\CImageParser.cpp">
+      <Filter>DataPool\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Material\CCacheMaterial.cpp">
+      <Filter>DataPool\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Material\CInternalMaterialLibrary.cpp">
+      <Filter>DataPool\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Material\CPass.cpp">
+      <Filter>DataPool\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Material\CRenderDelegate.cpp">
+      <Filter>DataPool\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Mesh\CCacheMesh.cpp">
+      <Filter>DataPool\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Mesh\CDynamicUIMesh.cpp">
+      <Filter>DataPool\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Mesh\CMeshFactory.cpp">
+      <Filter>DataPool\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Program\CCacheProgram.cpp">
+      <Filter>DataPool\Program</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Program\CUniform.cpp">
+      <Filter>DataPool\Program</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Shader\CCacheFragmentShader.cpp">
+      <Filter>DataPool\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Shader\CCacheShader.cpp">
+      <Filter>DataPool\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Shader\CCacheVertexShader.cpp">
+      <Filter>DataPool\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Shader\CInternalShaderLibrary.cpp">
+      <Filter>DataPool\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Texture\CCacheTexture.cpp">
+      <Filter>DataPool\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\Texture\CTextMergeTexture.cpp">
+      <Filter>DataPool\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CacheGPUObject.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CFontPool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CImagePool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CMaterialPool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CMeshPool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CProgramPool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CShaderPool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPool\CTexturePool.cpp">
+      <Filter>DataPool</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CacheData\CMaterialRenderCacheData.cpp">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CacheData\CRenderGroupCacheData.cpp">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CacheData\CRenderImageCacheData.cpp">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CacheData\CRenderModelCacheData.cpp">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CacheData\CRenderTextCacheData.cpp">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CacheData\CRenderViewportCacheData.cpp">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CBaseFilter.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFilterCenter.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFilterGlass.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFilterMask.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFilterReflection.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Filter\CFilterRipple.cpp">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\RenderTarget\CRenderTarget.cpp">
+      <Filter>RenderPipeline\RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\RenderTarget\CRenderTargetManager.cpp">
+      <Filter>RenderPipeline\RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\Text\CTextLayout.cpp">
+      <Filter>RenderPipeline\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CRenderEntry.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CRenderState.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CWaveRenderDelegate.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\C2DBatchRender.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\C2DBatchRenderGroup.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\C2DRenderUtility.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\C3DBatchRender.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\C3DBatchRenderGroup.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline\CBatchRenderGroup.cpp">
+      <Filter>RenderPipeline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenHMIConnector\CImpRenderEngine.h">
+      <Filter>OpenHMIConnector</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenHMIConnector\CImpRenderSession.h">
+      <Filter>OpenHMIConnector</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\CRenderEngineOS.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\CBilinearFunc.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\CCamera.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\CDIB.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\CPool.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="ThirdInclude.h" />
+    <ClInclude Include="DataPool\Font\CCacheGlyph.h">
+      <Filter>DataPool\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Font\CFontFace.h">
+      <Filter>DataPool\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Image\CCacheImage.h">
+      <Filter>DataPool\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Image\CImageParser.h">
+      <Filter>DataPool\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Material\CCacheMaterial.h">
+      <Filter>DataPool\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Material\CInternalMaterialLibrary.h">
+      <Filter>DataPool\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Material\CPass.h">
+      <Filter>DataPool\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Material\CRenderDelegate.h">
+      <Filter>DataPool\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Mesh\CCacheMesh.h">
+      <Filter>DataPool\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Mesh\CDynamicUIMesh.h">
+      <Filter>DataPool\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Mesh\CMeshFactory.h">
+      <Filter>DataPool\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Program\CCacheProgram.h">
+      <Filter>DataPool\Program</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Program\CUniform.h">
+      <Filter>DataPool\Program</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Shader\CCacheFragmentShader.h">
+      <Filter>DataPool\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Shader\CCacheShader.h">
+      <Filter>DataPool\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Shader\CCacheVertexShader.h">
+      <Filter>DataPool\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Shader\CInternalShaderLibrary.h">
+      <Filter>DataPool\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Texture\CCacheTexture.h">
+      <Filter>DataPool\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\Texture\CTextMergeTexture.h">
+      <Filter>DataPool\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CacheGPUObject.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CFontPool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CImagePool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CMaterialPool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CMeshPool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CProgramPool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CShaderPool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPool\CTexturePool.h">
+      <Filter>DataPool</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CacheData\CMaterialRenderCacheData.h">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CacheData\CRenderGroupCacheData.h">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CacheData\CRenderImageCacheData.h">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CacheData\CRenderModelCacheData.h">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CacheData\CRenderTextCacheData.h">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CacheData\CRenderViewportCacheData.h">
+      <Filter>RenderPipeline\CacheData</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CBaseFilter.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFilterCenter.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFilterGlass.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFilterMask.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFilterReflection.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Filter\CFilterRipple.h">
+      <Filter>RenderPipeline\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\RenderTarget\CRenderTarget.h">
+      <Filter>RenderPipeline\RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\RenderTarget\CRenderTargetManager.h">
+      <Filter>RenderPipeline\RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\Text\CTextLayout.h">
+      <Filter>RenderPipeline\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CBatchRenderGroup.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CRenderEntry.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CRenderState.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\CWaveRenderDelegate.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\C2DBatchRender.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\C2DBatchRenderGroup.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\C2DRenderUtility.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\C3DBatchRender.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline\C3DBatchRenderGroup.h">
+      <Filter>RenderPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kopengles.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

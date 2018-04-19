@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="HMI.h" />
+    <ClInclude Include="framework\CFuncWgtOpMenu.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CMainFrame.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPrjBaseScreen.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CScnMain.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\EResCtrlWidget.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\EResFuncWidget.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\EResImage.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\EResLanguage.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\EResPopup.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\EResScreen.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\misc\CHelpFunction.h">
+      <Filter>framework\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CLogicManager.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="framework\CFuncWgtChangeSkin.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\misc\CLogic.h">
+      <Filter>framework\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtAd.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtUser.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\giflib\gif_hash.h">
+      <Filter>framework\misc\giflib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\giflib\gif_lib.h">
+      <Filter>framework\misc\giflib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\giflib\gif_lib_private.h">
+      <Filter>framework\misc\giflib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\giflib\stdbool.h">
+      <Filter>framework\misc\giflib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\giflib\stdint.h">
+      <Filter>framework\misc\giflib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\src\giflib\unistd.h">
+      <Filter>framework\misc\giflib</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\misc\ZipFunction.h">
+      <Filter>framework\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtPopUser.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtSkinItem.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\OSFDlg.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtAdmin.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtHotSearch.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtTips.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtUdiskLogin.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtUdiskReg.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPopAdmin.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPopChangeSkin.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPopTips.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPopUdiskLogin.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPopUdiskReg.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtUdisk.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPopUdisk.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtChangePsw.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CPopChangePsw.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassDeclare.h" />
+    <ClInclude Include="framework\CFuncWgtUploadcfg.h" />
+    <ClInclude Include="framework\CPopUploadcfg.h" />
+    <ClInclude Include="framework\CFuncWgtSaveFile.h" />
+    <ClInclude Include="framework\CPopSaveFile.h" />
+    <ClInclude Include="framework\GameData.h" />
+    <ClInclude Include="framework\CFuncWgtReadFile.h" />
+    <ClInclude Include="framework\CPopReadFile.h" />
+    <ClInclude Include="..\..\public\src\localconfig\localconfigfun.h" />
+    <ClInclude Include="framework\ZipAd.h" />
+    <ClInclude Include="framework\misc\unzip.h" />
+    <ClInclude Include="framework\CFuncWgtAdRec.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CFuncWgtNoResult.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\aes.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\ygt.hpp">
+      <Filter>framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HMI.cpp" />
+    <ClCompile Include="framework\CFuncWgtOpMenu.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CMainFrame.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPrjBaseScreen.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CScnMain.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\misc\CHelpFunction.cpp">
+      <Filter>framework\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CLogicManager.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtChangeSkin.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\misc\CLogic.cpp">
+      <Filter>framework\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtAd.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtUser.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\giflib\dgif_lib.c">
+      <Filter>framework\misc\giflib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\giflib\egif_lib.c">
+      <Filter>framework\misc\giflib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\giflib\gif_err.c">
+      <Filter>framework\misc\giflib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\giflib\gif_font.c">
+      <Filter>framework\misc\giflib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\giflib\gif_hash.c">
+      <Filter>framework\misc\giflib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\giflib\gifalloc.c">
+      <Filter>framework\misc\giflib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\src\giflib\quantize.c">
+      <Filter>framework\misc\giflib</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\misc\ZipFunction.cpp">
+      <Filter>framework\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtPopUser.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtSkinItem.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\OSFDlg.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtAdmin.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtHotSearch.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtTips.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtUdiskLogin.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtUdiskReg.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPopAdmin.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPopChangeSkin.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPopTips.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPopUdiskLogin.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPopUdiskReg.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtUdisk.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPopUdisk.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtChangePsw.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CPopChangePsw.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtUploadcfg.cpp" />
+    <ClCompile Include="framework\CPopUploadcfg.cpp" />
+    <ClCompile Include="framework\CFuncWgtSaveFile.cpp" />
+    <ClCompile Include="framework\CPopSaveFile.cpp" />
+    <ClCompile Include="framework\GameData.cpp" />
+    <ClCompile Include="framework\CFuncWgtReadFile.cpp" />
+    <ClCompile Include="framework\CPopReadFile.cpp" />
+    <ClCompile Include="..\..\public\src\localconfig\localconfigfun.cpp" />
+    <ClCompile Include="framework\ZipAd.cpp" />
+    <ClCompile Include="framework\misc\unzip.cpp" />
+    <ClCompile Include="framework\CFuncWgtAdRec.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CFuncWgtNoResult.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\aes.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\ygt.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="framework">
+      <UniqueIdentifier>{aeef5af2-8cc3-4fee-afc9-526290724e26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\misc">
+      <UniqueIdentifier>{ed3a2ee6-d582-40df-8a5a-84b5cecfa732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{971b2481-fe32-419a-85e5-882ae06e0545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\misc\giflib">
+      <UniqueIdentifier>{16615570-15a0-4d3e-ae4e-ebeb0cbd036c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kmenu.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\kmenu.ico" />
+    <Image Include="res\kmenu_off.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\menu_chs.xml" />
+    <Xml Include="res\menu_en.xml" />
+  </ItemGroup>
+</Project>

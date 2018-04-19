@@ -1,0 +1,4 @@
+include lib:外部引用库
+kuibase:基础框架库
+kgdiplus:基于基础框架的gid+引擎库
+kopengles:基于基础框架的opengles引擎库

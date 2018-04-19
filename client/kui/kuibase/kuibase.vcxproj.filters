@@ -1,0 +1,1406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="others">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="BaseProject">
+      <UniqueIdentifier>{d95ce711-3930-405b-a477-b51db15220f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseProject\Framework">
+      <UniqueIdentifier>{d3dfb27e-8744-4fe6-8ab5-75192fc89e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseProject\Framework\Misc">
+      <UniqueIdentifier>{3b01ed22-b396-4349-a98a-f3c5f35c27bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseProject\Service">
+      <UniqueIdentifier>{d1bb0db6-da47-444e-8021-354d929dd219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{77af555b-be58-433c-a15f-7e5b72c3afdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{db014a61-9edb-475a-9d15-4d140e48e030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\File">
+      <UniqueIdentifier>{562f3ee4-935a-45c1-8b62-ef1eb341a7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\MemManager">
+      <UniqueIdentifier>{bd13c6f2-3982-4211-ada6-988f253fb513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Net">
+      <UniqueIdentifier>{18c7fcc0-4723-442e-a0c1-2526296eca1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\ScreenTouch">
+      <UniqueIdentifier>{08fdb9d4-646f-4b60-995e-f3a07516fcbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Thread">
+      <UniqueIdentifier>{7d0e085f-71e2-4656-9470-1f73ff7104ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Timer">
+      <UniqueIdentifier>{53f3050f-9691-40da-8c81-4b1fdc5abebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderEngine">
+      <UniqueIdentifier>{1d65c9af-17b5-4cce-8ee6-4ffd5e43ac54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceSystem">
+      <UniqueIdentifier>{539e537e-f794-4f30-bd8b-05c57f89ba74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceSystem\Skin">
+      <UniqueIdentifier>{de5f0774-acf2-4384-852d-2b9c95af9886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem">
+      <UniqueIdentifier>{30f8b7a3-b759-4f3a-9739-255e62bb1914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem">
+      <UniqueIdentifier>{f91fa374-5846-472f-9211-992039404cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Container">
+      <UniqueIdentifier>{996e8f8b-7912-4ac9-a38d-5dd8e3919419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Container\Keyboard">
+      <UniqueIdentifier>{5eac920e-c2f9-4df6-a15c-dcaf858ecf26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control">
+      <UniqueIdentifier>{9634d715-4be1-45c1-87e3-cccdb3ad8fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Balance">
+      <UniqueIdentifier>{23e463b8-b60f-4dbb-be53-453800e32ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Button">
+      <UniqueIdentifier>{02358cf1-3a2e-455f-9027-6eea47da6b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Edit">
+      <UniqueIdentifier>{a63eeb99-e7fe-440a-92aa-fa238da60ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\ImageField">
+      <UniqueIdentifier>{5067535b-b963-4370-a9dd-9191d7adeef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Label">
+      <UniqueIdentifier>{edb30358-8a8c-4ebc-a61a-09bca68e4993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\List">
+      <UniqueIdentifier>{3148795e-1d5c-485e-b9f8-149a104b9dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Progressbar">
+      <UniqueIdentifier>{bd4ea844-1525-4f25-ba5e-3963add88d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Scrollbar">
+      <UniqueIdentifier>{1f7ce225-ff17-429b-91fd-8c719c30db4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Selector">
+      <UniqueIdentifier>{1de0945c-c562-4c69-a589-f3f2d4c348d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Table">
+      <UniqueIdentifier>{095d5e04-961f-409a-a286-9e4bf6a64031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\TextField">
+      <UniqueIdentifier>{ab6cd373-f91b-41ff-b662-f7cf3347d697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Tree">
+      <UniqueIdentifier>{54571678-60d1-46f0-8e07-f4892b09b119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\Viewport">
+      <UniqueIdentifier>{474eab44-2590-4117-ac63-157601500a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Control\WebBrowser">
+      <UniqueIdentifier>{4ed80758-10ac-4886-8bff-8091caaaf71b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\HitArea">
+      <UniqueIdentifier>{91976ee5-6a86-4829-80be-61392d8ff98f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\2DSystem\Misc">
+      <UniqueIdentifier>{3306a9e6-9659-4d38-9144-4a84293637b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\3DSystem">
+      <UniqueIdentifier>{380d4d70-9a5a-465e-ba6e-3205c9bade67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\3DSystem\Misc">
+      <UniqueIdentifier>{80f060e8-10ec-4eb3-af84-05631d7f76dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\AnimationSystem">
+      <UniqueIdentifier>{be40b24b-6811-4ef7-aaa2-233259f92d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\AnimationSystem\Animation">
+      <UniqueIdentifier>{9e159a63-8a39-4ff3-bd50-3b321ef4058e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\AnimationSystem\Data">
+      <UniqueIdentifier>{f0c66cf1-6f6f-46bc-b784-71bf63d14e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\AnimationSystem\Interpolation">
+      <UniqueIdentifier>{5eee3421-9c68-4337-baaf-2ddc38ae00d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\AnimationSystem\Path">
+      <UniqueIdentifier>{6cea570a-701e-4038-ae34-0c8a214d4d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\GestureRecognizer">
+      <UniqueIdentifier>{f6768c8d-f09e-40de-8dc5-98e40085e549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\Render">
+      <UniqueIdentifier>{dc3fe348-2e2c-4d43-8e8c-45165ab006e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISystem\ScreenTouch">
+      <UniqueIdentifier>{efc76604-8693-4ee4-ba61-39fe9c300698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{504e1f5f-062c-4083-b344-af72fe21c001}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\CONFIG.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseApplication.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseFuncWidget.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseLogic.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseMainFrame.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseMessage.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseOperationCenter.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBasePopup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CBaseScreen.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\CMain.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CLanguage.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CLog.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Application.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Language.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Logic.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Service.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Framework\Misc\CManager_Skin.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\INIT.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CBaseData.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CBaseService.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CMsgFromServiceThread.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CMsgToServiceThread.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\CServiceAdaptor.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\IBaseService.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\BaseProject\Service\IServiceAdaptor.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Array.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Array2.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\ArrayPtr.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\ByteArray.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\CacheObject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\CachePool.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\CachePool2.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\List.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\List2.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\MacroDefine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Map.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Map2.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Math.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Metatype.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Object.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\ObjectPtr.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Pair.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\Set.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\String.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\StructDefine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common\TypeDefine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Common.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\OpenHMI.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\CTime.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\File\CFile.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\File\CFolder.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\File\CPath.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\MemManager\CMemManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Net\CAutoSocket.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Net\ISocketListener.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CCursor.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgEdit.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgHardKey.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgScreen.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CMsgScreenTouch.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\CScreenTouchServer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\ScreenTouch\IScreenTouchListener.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CAutoSync.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CSyncObject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CThread.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Thread\CWaitObject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\CMsgTimer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\CTimer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\CTimerManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\Platform\Timer\ITimerListener.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderCacheData.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderEngine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderFilter.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderFont.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderGroup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderImage.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderItem.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderText.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\CRenderViewport.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\IRenderEngine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\RenderEngine\IRenderSession.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CConfigParser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CFontParser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CLanguageParser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CNodeParser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CPluginParser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\CPropertySet.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResCtrlWidget.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFilter.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFilterSet.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFont.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFontGroup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResFuncWidget.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResGroup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResHitArea.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResImage.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResImageField.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResItem.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResNode.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResPopup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResScreen.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CResTextField.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\ResourceSystem\Skin\CSkinParser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CComponent.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CContainer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CEventGesture.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CModel.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\CWgtMessageBox.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CKeyTable.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CKeyTable_ASC.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CWgtKeyboard.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Container\Keyboard\CWgtKeyboard_ASC.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Balance\CCtrlBalance.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Balance\CModelBalance.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Balance\CViewBalance.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Button\CCtrlButton.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Edit\CCtrlEdit.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\ImageField\CCtrlImageField.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Label\CCtrlLabel.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Label\CViewLabel.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CBaseListAmt.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CCtrlList.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CCtrlList_Simple.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtElasticity.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtEnterInterdigitation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtFling.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CListAmtTouchShake.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\CModelList.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\IViewList.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\List\IViewList_Simple.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Progressbar\CCtrlProgressbar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Progressbar\CModelProgressbar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Progressbar\CViewProgressbar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Scrollbar\CCtrlScrollbar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Scrollbar\CModelScrollbar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Scrollbar\CViewScrollbar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Selector\CCtrlSelector.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CBaseTableAmt.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CCtrlTable.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CModelTable.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtElasticity.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtEnterInterdigitation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtFling.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\CTableAmtTouchShake.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Table\IViewTable.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\TextField\CCtrlTextField.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Tree\CCtrlTree.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Tree\CModelTree.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Tree\IViewTree.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\Viewport\CCtrlViewport.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\WebBrowser\CCtrlWebBrowser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\CView.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CBaseHitArea.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CHitAreaCircle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CHitAreaRectangle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\HitArea\CHitAreaTriangle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\IMovieClipGenerator.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\ISoundGenerator.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CButtonGroup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CMovieClip.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CPoint.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CRectangle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CRectangleF.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Misc\CSize.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DBox.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DColor.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DMatrix.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DPlane.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DPoint.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DQuaternion.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DRay.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DVector.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\3DSystem\Misc\C3DVector4.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CBaseMotionAnimation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CKeyFrame.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CKeyFrameAnimation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CTrackAnimation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CUniformRectilinearMotionAnimation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Animation\CValueAnimation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CAdapterAnimationListener.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CAnimationGroup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CAnimationPlayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\CBaseAnimation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtBoolean.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtByte.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtChar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtColor.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtDouble.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtFloat.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtInt.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtLong.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtPoint.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtRectangle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtShort.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtString.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CAmtVector2.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Data\CBaseAmtData.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\IAnimationListener.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CBaseInterpolation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CBezierInterpolation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CDiscreteInterpolation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Interpolation\CLinearInterpolation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CArc.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CBasePath.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CBezier.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CCircle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CEclipse.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CPathGroup.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\AnimationSystem\Path\CPoliLine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\CCommandDispatcher.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\CEventDispatcher.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ENV.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CBaseGestureData.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CBaseGestureRecognizer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CGestureManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\CMsgGesture.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\GestureRecognizer\IGestureRecognizer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ICommandListener.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\IEventListener.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\Render\CMsgRender.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\Render\IRenderable.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ScreenTouch\CScreenTouchManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ScreenTouch\ICanvas.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\ScreenTouch\ICursorTracker.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\WebBrowser\WebBrowser.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kuibase\UISystem\2DSystem\Control\WebBrowser\jscallclient.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>others</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Service.cpp">
+      <Filter>BaseProject\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Skin.cpp">
+      <Filter>BaseProject\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CLanguage.cpp">
+      <Filter>BaseProject\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CLog.cpp">
+      <Filter>BaseProject\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Application.cpp">
+      <Filter>BaseProject\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Language.cpp">
+      <Filter>BaseProject\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\Misc\CManager_Logic.cpp">
+      <Filter>BaseProject\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseApplication.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseFuncWidget.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseLogic.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseMainFrame.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseMessage.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseOperationCenter.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBasePopup.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CBaseScreen.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Framework\CMain.cpp">
+      <Filter>BaseProject\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CServiceAdaptor.cpp">
+      <Filter>BaseProject\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CBaseData.cpp">
+      <Filter>BaseProject\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CBaseService.cpp">
+      <Filter>BaseProject\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CMsgFromServiceThread.cpp">
+      <Filter>BaseProject\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\Service\CMsgToServiceThread.cpp">
+      <Filter>BaseProject\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\INIT.cpp">
+      <Filter>BaseProject</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseProject\CONFIG.cpp">
+      <Filter>BaseProject</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CacheObject.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Math.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Object.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\String.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ByteArray.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\File\CPath.cpp">
+      <Filter>Platform\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\File\CFile.cpp">
+      <Filter>Platform\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\File\CFolder.cpp">
+      <Filter>Platform\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Net\CAutoSocket.cpp">
+      <Filter>Platform\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CMsgHardKey.cpp">
+      <Filter>Platform\ScreenTouch</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CMsgScreen.cpp">
+      <Filter>Platform\ScreenTouch</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CMsgScreenTouch.cpp">
+      <Filter>Platform\ScreenTouch</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CScreenTouchServer.cpp">
+      <Filter>Platform\ScreenTouch</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ScreenTouch\CCursor.cpp">
+      <Filter>Platform\ScreenTouch</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CSyncObject.cpp">
+      <Filter>Platform\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CThread.cpp">
+      <Filter>Platform\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CWaitObject.cpp">
+      <Filter>Platform\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Thread\CAutoSync.cpp">
+      <Filter>Platform\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Timer\CTimer.cpp">
+      <Filter>Platform\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Timer\CTimerManager.cpp">
+      <Filter>Platform\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Timer\CMsgTimer.cpp">
+      <Filter>Platform\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\CTime.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderCacheData.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderEngine.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderFilter.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderFont.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderGroup.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderImage.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderItem.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderText.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CRenderViewport.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResCtrlWidget.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFilter.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFilterSet.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFont.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFontGroup.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResFuncWidget.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResGroup.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResHitArea.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResImage.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResImageField.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResItem.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResNode.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResPopup.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResScreen.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CResTextField.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\Skin\CSkinParser.cpp">
+      <Filter>ResourceSystem\Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CNodeParser.cpp">
+      <Filter>ResourceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CPluginParser.cpp">
+      <Filter>ResourceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CPropertySet.cpp">
+      <Filter>ResourceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CConfigParser.cpp">
+      <Filter>ResourceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CFontParser.cpp">
+      <Filter>ResourceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\CLanguageParser.cpp">
+      <Filter>ResourceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CKeyTable_ASC.cpp">
+      <Filter>UISystem\2DSystem\Container\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CWgtKeyboard.cpp">
+      <Filter>UISystem\2DSystem\Container\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CWgtKeyboard_ASC.cpp">
+      <Filter>UISystem\2DSystem\Container\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\Keyboard\CKeyTable.cpp">
+      <Filter>UISystem\2DSystem\Container\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Container\CWgtMessageBox.cpp">
+      <Filter>UISystem\2DSystem\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Balance\CCtrlBalance.cpp">
+      <Filter>UISystem\2DSystem\Control\Balance</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Balance\CModelBalance.cpp">
+      <Filter>UISystem\2DSystem\Control\Balance</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Balance\CViewBalance.cpp">
+      <Filter>UISystem\2DSystem\Control\Balance</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Button\CCtrlButton.cpp">
+      <Filter>UISystem\2DSystem\Control\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Edit\CCtrlEdit.cpp">
+      <Filter>UISystem\2DSystem\Control\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\ImageField\CCtrlImageField.cpp">
+      <Filter>UISystem\2DSystem\Control\ImageField</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Label\CCtrlLabel.cpp">
+      <Filter>UISystem\2DSystem\Control\Label</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Label\CViewLabel.cpp">
+      <Filter>UISystem\2DSystem\Control\Label</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CBaseListAmt.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CCtrlList.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CCtrlList_Simple.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtElasticity.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtEnterInterdigitation.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtFling.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CListAmtTouchShake.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\List\CModelList.cpp">
+      <Filter>UISystem\2DSystem\Control\List</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Progressbar\CCtrlProgressbar.cpp">
+      <Filter>UISystem\2DSystem\Control\Progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Progressbar\CModelProgressbar.cpp">
+      <Filter>UISystem\2DSystem\Control\Progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Progressbar\CViewProgressbar.cpp">
+      <Filter>UISystem\2DSystem\Control\Progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Scrollbar\CCtrlScrollbar.cpp">
+      <Filter>UISystem\2DSystem\Control\Scrollbar</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Scrollbar\CModelScrollbar.cpp">
+      <Filter>UISystem\2DSystem\Control\Scrollbar</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Scrollbar\CViewScrollbar.cpp">
+      <Filter>UISystem\2DSystem\Control\Scrollbar</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Selector\CCtrlSelector.cpp">
+      <Filter>UISystem\2DSystem\Control\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CBaseTableAmt.cpp">
+      <Filter>UISystem\2DSystem\Control\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CCtrlTable.cpp">
+      <Filter>UISystem\2DSystem\Control\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CModelTable.cpp">
+      <Filter>UISystem\2DSystem\Control\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtElasticity.cpp">
+      <Filter>UISystem\2DSystem\Control\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtEnterInterdigitation.cpp">
+      <Filter>UISystem\2DSystem\Control\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtFling.cpp">
+      <Filter>UISystem\2DSystem\Control\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Table\CTableAmtTouchShake.cpp">
+      <Filter>UISystem\2DSystem\Control\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\TextField\CCtrlTextField.cpp">
+      <Filter>UISystem\2DSystem\Control\TextField</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Tree\CCtrlTree.cpp">
+      <Filter>UISystem\2DSystem\Control\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Tree\CModelTree.cpp">
+      <Filter>UISystem\2DSystem\Control\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\Viewport\CCtrlViewport.cpp">
+      <Filter>UISystem\2DSystem\Control\Viewport</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\WebBrowser\CCtrlWebBrowser.cpp">
+      <Filter>UISystem\2DSystem\Control\WebBrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CBaseHitArea.cpp">
+      <Filter>UISystem\2DSystem\HitArea</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CHitAreaCircle.cpp">
+      <Filter>UISystem\2DSystem\HitArea</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CHitAreaRectangle.cpp">
+      <Filter>UISystem\2DSystem\HitArea</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\HitArea\CHitAreaTriangle.cpp">
+      <Filter>UISystem\2DSystem\HitArea</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CButtonGroup.cpp">
+      <Filter>UISystem\2DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CMovieClip.cpp">
+      <Filter>UISystem\2DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CPoint.cpp">
+      <Filter>UISystem\2DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CRectangle.cpp">
+      <Filter>UISystem\2DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CRectangleF.cpp">
+      <Filter>UISystem\2DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Misc\CSize.cpp">
+      <Filter>UISystem\2DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\CContainer.cpp">
+      <Filter>UISystem\2DSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\CModel.cpp">
+      <Filter>UISystem\2DSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\CView.cpp">
+      <Filter>UISystem\2DSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\CComponent.cpp">
+      <Filter>UISystem\2DSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DBox.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DColor.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DMatrix.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DPlane.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DPoint.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DQuaternion.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DRay.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DVector.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\3DSystem\Misc\C3DVector4.cpp">
+      <Filter>UISystem\3DSystem\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CBaseMotionAnimation.cpp">
+      <Filter>UISystem\AnimationSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CKeyFrame.cpp">
+      <Filter>UISystem\AnimationSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CKeyFrameAnimation.cpp">
+      <Filter>UISystem\AnimationSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CTrackAnimation.cpp">
+      <Filter>UISystem\AnimationSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CUniformRectilinearMotionAnimation.cpp">
+      <Filter>UISystem\AnimationSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Animation\CValueAnimation.cpp">
+      <Filter>UISystem\AnimationSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtBoolean.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtByte.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtChar.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtColor.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtDouble.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtFloat.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtInt.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtLong.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtPoint.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtRectangle.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtShort.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtString.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CAmtVector2.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Data\CBaseAmtData.cpp">
+      <Filter>UISystem\AnimationSystem\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CBaseInterpolation.cpp">
+      <Filter>UISystem\AnimationSystem\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CBezierInterpolation.cpp">
+      <Filter>UISystem\AnimationSystem\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CDiscreteInterpolation.cpp">
+      <Filter>UISystem\AnimationSystem\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Interpolation\CLinearInterpolation.cpp">
+      <Filter>UISystem\AnimationSystem\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CArc.cpp">
+      <Filter>UISystem\AnimationSystem\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CBasePath.cpp">
+      <Filter>UISystem\AnimationSystem\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CBezier.cpp">
+      <Filter>UISystem\AnimationSystem\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CCircle.cpp">
+      <Filter>UISystem\AnimationSystem\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CEclipse.cpp">
+      <Filter>UISystem\AnimationSystem\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CPathGroup.cpp">
+      <Filter>UISystem\AnimationSystem\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\Path\CPoliLine.cpp">
+      <Filter>UISystem\AnimationSystem\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CAnimationPlayer.cpp">
+      <Filter>UISystem\AnimationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CBaseAnimation.cpp">
+      <Filter>UISystem\AnimationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CAdapterAnimationListener.cpp">
+      <Filter>UISystem\AnimationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\AnimationSystem\CAnimationGroup.cpp">
+      <Filter>UISystem\AnimationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\GestureRecognizer\CBaseGestureRecognizer.cpp">
+      <Filter>UISystem\GestureRecognizer</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\GestureRecognizer\CGestureManager.cpp">
+      <Filter>UISystem\GestureRecognizer</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\GestureRecognizer\CMsgGesture.cpp">
+      <Filter>UISystem\GestureRecognizer</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\Render\CMsgRender.cpp">
+      <Filter>UISystem\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\ScreenTouch\CScreenTouchManager.cpp">
+      <Filter>UISystem\ScreenTouch</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\CEventDispatcher.cpp">
+      <Filter>UISystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\ENV.cpp">
+      <Filter>UISystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\CCommandDispatcher.cpp">
+      <Filter>UISystem</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenHMI.cpp">
+      <Filter>others</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\WebBrowser\jscallclient.cpp">
+      <Filter>UISystem\2DSystem\Control\WebBrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="UISystem\2DSystem\Control\WebBrowser\WebBrowser.cpp">
+      <Filter>UISystem\2DSystem\Control\WebBrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSystem\ZipSkin.cpp">
+      <Filter>ResourceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="kunzip.cpp">
+      <Filter>others</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kuibase.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

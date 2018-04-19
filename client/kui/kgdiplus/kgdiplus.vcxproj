@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataPool\CFontPool.cpp" />
+    <ClCompile Include="DataPool\CImagePool.cpp" />
+    <ClCompile Include="DataPool\Font\CCacheGlyph.cpp" />
+    <ClCompile Include="DataPool\Font\CFontFace.cpp" />
+    <ClCompile Include="DataPool\Image\CCacheImage.cpp" />
+    <ClCompile Include="DataPool\Image\CImageParser.cpp" />
+    <ClCompile Include="DataPool\Image\CImgBMP.cpp" />
+    <ClCompile Include="DataPool\Image\CImgPNG.cpp" />
+    <ClCompile Include="OpenHMIConnector\CImpRenderEngine.cpp" />
+    <ClCompile Include="OpenHMIConnector\CImpRenderSession.cpp" />
+    <ClCompile Include="Platform\CRenderEngineOS.cpp" />
+    <ClCompile Include="RenderEngine.cpp" />
+    <ClCompile Include="RenderPipeline\CCacheData.cpp" />
+    <ClCompile Include="RenderPipeline\CRenderEntry.cpp" />
+    <ClCompile Include="RenderPipeline\CTextLayout.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFilterCenter.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFltMask.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFltReflection.cpp" />
+    <ClCompile Include="Utility\CBilinearFunc.cpp" />
+    <ClCompile Include="Utility\CDIB.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataPool\CFontPool.h" />
+    <ClInclude Include="DataPool\CImagePool.h" />
+    <ClInclude Include="DataPool\Font\CCacheGlyph.h" />
+    <ClInclude Include="DataPool\Font\CFontFace.h" />
+    <ClInclude Include="DataPool\Image\CCacheImage.h" />
+    <ClInclude Include="DataPool\Image\CImageParser.h" />
+    <ClInclude Include="DataPool\Image\CImgBMP.h" />
+    <ClInclude Include="DataPool\Image\CImgPNG.h" />
+    <ClInclude Include="OpenHMIConnector\CImpRenderEngine.h" />
+    <ClInclude Include="OpenHMIConnector\CImpRenderSession.h" />
+    <ClInclude Include="Platform\CRenderEngineOS.h" />
+    <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="RenderPipeline\CCacheData.h" />
+    <ClInclude Include="RenderPipeline\CRenderEntry.h" />
+    <ClInclude Include="RenderPipeline\CTextLayout.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFilterCenter.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFltMask.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFltReflection.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ThirdInclude.h" />
+    <ClInclude Include="Utility\CBilinearFunc.h" />
+    <ClInclude Include="Utility\CDIB.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RenderEngine.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kgdiplus.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7704503-A146-4A1C-96FD-B900C3A7C29A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\bin\x86\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\bin\x86\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;KGDIPLUS_EXPORTS;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\DataPool\Font\;.\DataPool\Image\;.\DataPool\;.\OpenHMIConnector;.\Platform\;.\RenderPipeline\Filter\;.\RenderPipeline\;.\Utility\;.\;..\..\..\include\kuibase\;..\include\;..\include\freetype\;..\..\..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>RenderEngine.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\..\lib\;..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kuibase.lib;freetyped.lib;zlibd.lib;libpngd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;KGDIPLUS_EXPORTS;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\DataPool\Font\;.\DataPool\Image\;.\DataPool\;.\OpenHMIConnector;.\Platform\;.\RenderPipeline\Filter\;.\RenderPipeline\;.\Utility\;.\;..\..\..\include\kuibase\;..\include\;..\include\freetype\;..\..\..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>RenderEngine.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\lib\;..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kuibase.lib;freetype.lib;libpng.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\lib\$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

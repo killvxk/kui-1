@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{96788FAD-7318-4AD7-BE7E-E77079F9C87D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\bin\x86\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\bin\x86\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;KOPENGLES_EXPORTS;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..\..\..\include\kuibase\;..\include\;..\include\freetype\;..\..\..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\lib\;..\..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kuibase.lib;libGLESv2.lib;libEGL.lib;freetyped.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\lib\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "..\lib\libEGL.dll" "$(OutDir)\libegl.dll"
+copy "..\lib\libGLESv2.dll" "$(OutDir)\libglesv2.dll"
+copy "..\lib\D3Dcompiler_47.dll" "$(OutDir)\D3Dcompiler_47.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;KOPENGLES_EXPORTS;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\;..\..\..\include\kuibase\;..\include\;..\include\freetype\;..\..\..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib\;..\..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kuibase.lib;libGLESv2.lib;libEGL.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\lib\$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "..\lib\libEGL.dll" "$(OutDir)\libegl.dll"
+copy "..\lib\libGLESv2.dll" "$(OutDir)\libglesv2.dll"
+copy "..\lib\D3Dcompiler_47.dll" "$(OutDir)\D3Dcompiler_47.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="RenderEngine.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataPool\CacheGPUObject.cpp" />
+    <ClCompile Include="DataPool\CFontPool.cpp" />
+    <ClCompile Include="DataPool\CImagePool.cpp" />
+    <ClCompile Include="DataPool\CMaterialPool.cpp" />
+    <ClCompile Include="DataPool\CMeshPool.cpp" />
+    <ClCompile Include="DataPool\CProgramPool.cpp" />
+    <ClCompile Include="DataPool\CShaderPool.cpp" />
+    <ClCompile Include="DataPool\CTexturePool.cpp" />
+    <ClCompile Include="DataPool\Font\CCacheGlyph.cpp" />
+    <ClCompile Include="DataPool\Font\CFontFace.cpp" />
+    <ClCompile Include="DataPool\Image\CCacheImage.cpp" />
+    <ClCompile Include="DataPool\Image\CImageParser.cpp" />
+    <ClCompile Include="DataPool\Material\CCacheMaterial.cpp" />
+    <ClCompile Include="DataPool\Material\CInternalMaterialLibrary.cpp" />
+    <ClCompile Include="DataPool\Material\CPass.cpp" />
+    <ClCompile Include="DataPool\Material\CRenderDelegate.cpp" />
+    <ClCompile Include="DataPool\Mesh\CCacheMesh.cpp" />
+    <ClCompile Include="DataPool\Mesh\CDynamicUIMesh.cpp" />
+    <ClCompile Include="DataPool\Mesh\CMeshFactory.cpp" />
+    <ClCompile Include="DataPool\Program\CCacheProgram.cpp" />
+    <ClCompile Include="DataPool\Program\CUniform.cpp" />
+    <ClCompile Include="DataPool\Shader\CCacheFragmentShader.cpp" />
+    <ClCompile Include="DataPool\Shader\CCacheShader.cpp" />
+    <ClCompile Include="DataPool\Shader\CCacheVertexShader.cpp" />
+    <ClCompile Include="DataPool\Shader\CInternalShaderLibrary.cpp" />
+    <ClCompile Include="DataPool\Texture\CCacheTexture.cpp" />
+    <ClCompile Include="DataPool\Texture\CTextMergeTexture.cpp" />
+    <ClCompile Include="OpenHMIConnector\CImpRenderEngine.cpp" />
+    <ClCompile Include="OpenHMIConnector\CImpRenderSession.cpp" />
+    <ClCompile Include="Platform\CRenderEngineOS.cpp" />
+    <ClCompile Include="RenderEngine.cpp" />
+    <ClCompile Include="RenderPipeline\C2DBatchRender.cpp" />
+    <ClCompile Include="RenderPipeline\C2DBatchRenderGroup.cpp" />
+    <ClCompile Include="RenderPipeline\C2DRenderUtility.cpp" />
+    <ClCompile Include="RenderPipeline\C3DBatchRender.cpp" />
+    <ClCompile Include="RenderPipeline\C3DBatchRenderGroup.cpp" />
+    <ClCompile Include="RenderPipeline\CacheData\CMaterialRenderCacheData.cpp" />
+    <ClCompile Include="RenderPipeline\CacheData\CRenderGroupCacheData.cpp" />
+    <ClCompile Include="RenderPipeline\CacheData\CRenderImageCacheData.cpp" />
+    <ClCompile Include="RenderPipeline\CacheData\CRenderModelCacheData.cpp" />
+    <ClCompile Include="RenderPipeline\CacheData\CRenderTextCacheData.cpp" />
+    <ClCompile Include="RenderPipeline\CacheData\CRenderViewportCacheData.cpp" />
+    <ClCompile Include="RenderPipeline\CBatchRenderGroup.cpp" />
+    <ClCompile Include="RenderPipeline\CRenderEntry.cpp" />
+    <ClCompile Include="RenderPipeline\CRenderState.cpp" />
+    <ClCompile Include="RenderPipeline\CWaveRenderDelegate.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CBaseFilter.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFilterCenter.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFilterGlass.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFilterMask.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFilterReflection.cpp" />
+    <ClCompile Include="RenderPipeline\Filter\CFilterRipple.cpp" />
+    <ClCompile Include="RenderPipeline\RenderTarget\CRenderTarget.cpp" />
+    <ClCompile Include="RenderPipeline\RenderTarget\CRenderTargetManager.cpp" />
+    <ClCompile Include="RenderPipeline\Text\CTextLayout.cpp" />
+    <ClCompile Include="Utility\CBilinearFunc.cpp" />
+    <ClCompile Include="Utility\CCamera.cpp" />
+    <ClCompile Include="Utility\CDIB.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataPool\CacheGPUObject.h" />
+    <ClInclude Include="DataPool\CFontPool.h" />
+    <ClInclude Include="DataPool\CImagePool.h" />
+    <ClInclude Include="DataPool\CMaterialPool.h" />
+    <ClInclude Include="DataPool\CMeshPool.h" />
+    <ClInclude Include="DataPool\CProgramPool.h" />
+    <ClInclude Include="DataPool\CShaderPool.h" />
+    <ClInclude Include="DataPool\CTexturePool.h" />
+    <ClInclude Include="DataPool\Font\CCacheGlyph.h" />
+    <ClInclude Include="DataPool\Font\CFontFace.h" />
+    <ClInclude Include="DataPool\Image\CCacheImage.h" />
+    <ClInclude Include="DataPool\Image\CImageParser.h" />
+    <ClInclude Include="DataPool\Material\CCacheMaterial.h" />
+    <ClInclude Include="DataPool\Material\CInternalMaterialLibrary.h" />
+    <ClInclude Include="DataPool\Material\CPass.h" />
+    <ClInclude Include="DataPool\Material\CRenderDelegate.h" />
+    <ClInclude Include="DataPool\Mesh\CCacheMesh.h" />
+    <ClInclude Include="DataPool\Mesh\CDynamicUIMesh.h" />
+    <ClInclude Include="DataPool\Mesh\CMeshFactory.h" />
+    <ClInclude Include="DataPool\Program\CCacheProgram.h" />
+    <ClInclude Include="DataPool\Program\CUniform.h" />
+    <ClInclude Include="DataPool\Shader\CCacheFragmentShader.h" />
+    <ClInclude Include="DataPool\Shader\CCacheShader.h" />
+    <ClInclude Include="DataPool\Shader\CCacheVertexShader.h" />
+    <ClInclude Include="DataPool\Shader\CInternalShaderLibrary.h" />
+    <ClInclude Include="DataPool\Texture\CCacheTexture.h" />
+    <ClInclude Include="DataPool\Texture\CTextMergeTexture.h" />
+    <ClInclude Include="OpenHMIConnector\CImpRenderEngine.h" />
+    <ClInclude Include="OpenHMIConnector\CImpRenderSession.h" />
+    <ClInclude Include="Platform\CRenderEngineOS.h" />
+    <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="RenderPipeline\C2DBatchRender.h" />
+    <ClInclude Include="RenderPipeline\C2DBatchRenderGroup.h" />
+    <ClInclude Include="RenderPipeline\C2DRenderUtility.h" />
+    <ClInclude Include="RenderPipeline\C3DBatchRender.h" />
+    <ClInclude Include="RenderPipeline\C3DBatchRenderGroup.h" />
+    <ClInclude Include="RenderPipeline\CacheData\CMaterialRenderCacheData.h" />
+    <ClInclude Include="RenderPipeline\CacheData\CRenderGroupCacheData.h" />
+    <ClInclude Include="RenderPipeline\CacheData\CRenderImageCacheData.h" />
+    <ClInclude Include="RenderPipeline\CacheData\CRenderModelCacheData.h" />
+    <ClInclude Include="RenderPipeline\CacheData\CRenderTextCacheData.h" />
+    <ClInclude Include="RenderPipeline\CacheData\CRenderViewportCacheData.h" />
+    <ClInclude Include="RenderPipeline\CBatchRenderGroup.h" />
+    <ClInclude Include="RenderPipeline\CRenderEntry.h" />
+    <ClInclude Include="RenderPipeline\CRenderState.h" />
+    <ClInclude Include="RenderPipeline\CWaveRenderDelegate.h" />
+    <ClInclude Include="RenderPipeline\Filter\CBaseFilter.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFilterCenter.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFilterGlass.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFilterMask.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFilterReflection.h" />
+    <ClInclude Include="RenderPipeline\Filter\CFilterRipple.h" />
+    <ClInclude Include="RenderPipeline\RenderTarget\CRenderTarget.h" />
+    <ClInclude Include="RenderPipeline\RenderTarget\CRenderTargetManager.h" />
+    <ClInclude Include="RenderPipeline\Text\CTextLayout.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ThirdInclude.h" />
+    <ClInclude Include="Utility\CBilinearFunc.h" />
+    <ClInclude Include="Utility\CCamera.h" />
+    <ClInclude Include="Utility\CDIB.h" />
+    <ClInclude Include="Utility\CPool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kopengles.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

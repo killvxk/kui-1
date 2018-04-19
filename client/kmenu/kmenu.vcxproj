@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\public\src\giflib\gif_hash.h" />
+    <ClInclude Include="..\..\public\src\giflib\gif_lib.h" />
+    <ClInclude Include="..\..\public\src\giflib\gif_lib_private.h" />
+    <ClInclude Include="..\..\public\src\giflib\stdbool.h" />
+    <ClInclude Include="..\..\public\src\giflib\stdint.h" />
+    <ClInclude Include="..\..\public\src\giflib\unistd.h" />
+    <ClInclude Include="..\..\public\src\localconfig\localconfigfun.h" />
+    <ClInclude Include="ClassDeclare.h" />
+    <ClInclude Include="framework\aes.h" />
+    <ClInclude Include="framework\CFuncWgtAd.h" />
+    <ClInclude Include="framework\CFuncWgtAdmin.h" />
+    <ClInclude Include="framework\CFuncWgtAdRec.h" />
+    <ClInclude Include="framework\CFuncWgtChangePsw.h" />
+    <ClInclude Include="framework\CFuncWgtChangeSkin.h" />
+    <ClInclude Include="framework\CFuncWgtHotSearch.h" />
+    <ClInclude Include="framework\CFuncWgtNoResult.h" />
+    <ClInclude Include="framework\CFuncWgtOpMenu.h" />
+    <ClInclude Include="framework\CFuncWgtPopUser.h" />
+    <ClInclude Include="framework\CFuncWgtReadFile.h" />
+    <ClInclude Include="framework\CFuncWgtSaveFile.h" />
+    <ClInclude Include="framework\CFuncWgtSkinItem.h" />
+    <ClInclude Include="framework\CFuncWgtTips.h" />
+    <ClInclude Include="framework\CFuncWgtUdisk.h" />
+    <ClInclude Include="framework\CFuncWgtUdiskLogin.h" />
+    <ClInclude Include="framework\CFuncWgtUdiskReg.h" />
+    <ClInclude Include="framework\CFuncWgtUploadcfg.h" />
+    <ClInclude Include="framework\CFuncWgtUser.h" />
+    <ClInclude Include="framework\CMainFrame.h" />
+    <ClInclude Include="framework\CPopAdmin.h" />
+    <ClInclude Include="framework\CPopChangePsw.h" />
+    <ClInclude Include="framework\CPopChangeSkin.h" />
+    <ClInclude Include="framework\CPopReadFile.h" />
+    <ClInclude Include="framework\CPopSaveFile.h" />
+    <ClInclude Include="framework\CPopTips.h" />
+    <ClInclude Include="framework\CPopUdisk.h" />
+    <ClInclude Include="framework\CPopUdiskLogin.h" />
+    <ClInclude Include="framework\CPopUdiskReg.h" />
+    <ClInclude Include="framework\CPopUploadcfg.h" />
+    <ClInclude Include="framework\CPrjBaseScreen.h" />
+    <ClInclude Include="framework\CScnMain.h" />
+    <ClInclude Include="framework\EResCtrlWidget.h" />
+    <ClInclude Include="framework\EResFuncWidget.h" />
+    <ClInclude Include="framework\EResImage.h" />
+    <ClInclude Include="framework\EResLanguage.h" />
+    <ClInclude Include="framework\EResPopup.h" />
+    <ClInclude Include="framework\EResScreen.h" />
+    <ClInclude Include="framework\GameData.h" />
+    <ClInclude Include="framework\misc\CHelpFunction.h" />
+    <ClInclude Include="framework\misc\CLogic.h" />
+    <ClInclude Include="framework\misc\unzip.h" />
+    <ClInclude Include="framework\misc\ZipFunction.h" />
+    <ClInclude Include="framework\OSFDlg.h" />
+    <ClInclude Include="framework\ygt.hpp" />
+    <ClInclude Include="framework\ZipAd.h" />
+    <ClInclude Include="HMI.h" />
+    <ClInclude Include="logic\CLogicManager.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\public\src\giflib\dgif_lib.c" />
+    <ClCompile Include="..\..\public\src\giflib\egif_lib.c" />
+    <ClCompile Include="..\..\public\src\giflib\gifalloc.c" />
+    <ClCompile Include="..\..\public\src\giflib\gif_err.c" />
+    <ClCompile Include="..\..\public\src\giflib\gif_font.c" />
+    <ClCompile Include="..\..\public\src\giflib\gif_hash.c" />
+    <ClCompile Include="..\..\public\src\giflib\quantize.c" />
+    <ClCompile Include="..\..\public\src\localconfig\localconfigfun.cpp" />
+    <ClCompile Include="framework\aes.cpp" />
+    <ClCompile Include="framework\CFuncWgtAd.cpp" />
+    <ClCompile Include="framework\CFuncWgtAdmin.cpp" />
+    <ClCompile Include="framework\CFuncWgtAdRec.cpp" />
+    <ClCompile Include="framework\CFuncWgtChangePsw.cpp" />
+    <ClCompile Include="framework\CFuncWgtChangeSkin.cpp" />
+    <ClCompile Include="framework\CFuncWgtHotSearch.cpp" />
+    <ClCompile Include="framework\CFuncWgtNoResult.cpp" />
+    <ClCompile Include="framework\CFuncWgtOpMenu.cpp" />
+    <ClCompile Include="framework\CFuncWgtPopUser.cpp" />
+    <ClCompile Include="framework\CFuncWgtReadFile.cpp" />
+    <ClCompile Include="framework\CFuncWgtSaveFile.cpp" />
+    <ClCompile Include="framework\CFuncWgtSkinItem.cpp" />
+    <ClCompile Include="framework\CFuncWgtTips.cpp" />
+    <ClCompile Include="framework\CFuncWgtUdisk.cpp" />
+    <ClCompile Include="framework\CFuncWgtUdiskLogin.cpp" />
+    <ClCompile Include="framework\CFuncWgtUdiskReg.cpp" />
+    <ClCompile Include="framework\CFuncWgtUploadcfg.cpp" />
+    <ClCompile Include="framework\CFuncWgtUser.cpp" />
+    <ClCompile Include="framework\CMainFrame.cpp" />
+    <ClCompile Include="framework\CPopAdmin.cpp" />
+    <ClCompile Include="framework\CPopChangePsw.cpp" />
+    <ClCompile Include="framework\CPopChangeSkin.cpp" />
+    <ClCompile Include="framework\CPopReadFile.cpp" />
+    <ClCompile Include="framework\CPopSaveFile.cpp" />
+    <ClCompile Include="framework\CPopTips.cpp" />
+    <ClCompile Include="framework\CPopUdisk.cpp" />
+    <ClCompile Include="framework\CPopUdiskLogin.cpp" />
+    <ClCompile Include="framework\CPopUdiskReg.cpp" />
+    <ClCompile Include="framework\CPopUploadcfg.cpp" />
+    <ClCompile Include="framework\CPrjBaseScreen.cpp" />
+    <ClCompile Include="framework\CScnMain.cpp" />
+    <ClCompile Include="framework\GameData.cpp" />
+    <ClCompile Include="framework\misc\CHelpFunction.cpp" />
+    <ClCompile Include="framework\misc\CLogic.cpp" />
+    <ClCompile Include="framework\misc\unzip.cpp" />
+    <ClCompile Include="framework\misc\ZipFunction.cpp" />
+    <ClCompile Include="framework\OSFDlg.cpp" />
+    <ClCompile Include="framework\ygt.cpp" />
+    <ClCompile Include="framework\ZipAd.cpp" />
+    <ClCompile Include="HMI.cpp" />
+    <ClCompile Include="logic\CLogicManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kmenu.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\kmenu.ico" />
+    <Image Include="res\kmenu_off.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\menu_chs.xml" />
+    <Xml Include="res\menu_en.xml" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{921C2DA0-9F57-4F43-8A65-2C7A9F10E6D8}</ProjectGuid>
+    <RootNamespace>YGX</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <ProjectName>knbmenu</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\x86\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\x86\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include\kuibase;.\;..\..\include\;..\kmenulib;..\..\public\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>HMI.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;Dbghelp.lib;Userenv.lib;kuibase.lib;kmenulibd.lib;libiconvd.lib;afxnmcdd.lib;uafxcwd.lib;LIBCMTD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <FixedBaseAddress />
+      <ImportLibrary />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\include\kuibase;.\;..\..\include\;..\kmenulib;..\..\public\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;OS_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>HMI.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;Dbghelp.lib;Userenv.lib;kuibase.lib;kmenulib.lib;afxnmcd.lib;uafxcw.lib;LIBCMT.lib;libiconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary />
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
